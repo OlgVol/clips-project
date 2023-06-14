@@ -42,7 +42,8 @@ format="(000)000-0000"
     disabled:opacity-50
     disabled:bg-indigo-400
     "
-  [disabled]="registerForm.invalid">
+  [disabled]="registerForm.invalid || inSubmission">
     Submit
   </button>
 </form>
+
